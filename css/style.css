@@ -1,0 +1,250 @@
+@charset 'UTF-8';
+@import url('reset.css');
+
+body {
+	color: #fff;
+	background-color: #262626;
+	background: linear-gradient(45deg, #0d0d0d, #333, #0d0d0d);
+	min-height: 100vh;
+	font-family: Georgia, serif;
+}
+
+main {
+	width: 95%;
+	margin: 0 auto;
+}
+
+header {
+	background: linear-gradient(to bottom, #99ccff, #00394d, transparent);
+	padding: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: .5em;
+}
+
+h1 {
+	font-size: 3em;
+	font-family: "Mostly Ghostly", sans-serif;
+	text-align: center;
+	text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+	letter-spacing: 5px;
+	margin-bottom: .25em;
+}
+
+h2 {
+	font-size: 1.5em;
+	background-color: rgba(0, 0, 0, .5);
+	padding: .5em;
+	font-weight: normal;
+	font-family: "Poetsen One", sans-serif;
+}
+
+h3 {
+	font-size: 1.25em;
+}
+
+strong {
+	font-weight: normal;
+	font-family: "Poetsen One", sans-serif;
+}
+
+p, blockquote {
+	line-height: 1.5em;
+	margin-bottom: 1em;
+}
+
+blockquote {
+	background-color: rgba(0, 0, 0, .15);
+	padding: .25em;
+	border-radius: .5em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+blockquote span {
+	font-family: "Poetsen One", sans-serif;
+	white-space: nowrap;
+}
+
+.slideshow {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: 86.5vh;
+	max-width: 1920px;
+	overflow: hidden;
+}
+
+.slideshow img {
+	width: 100%;
+}
+
+.slideshow-caption {
+	text-align: right;
+	padding: .5em;
+	position: absolute;
+	z-index: 1000;
+	right: .5em;
+	top: .5em;
+	background-color: rgba(0, 0, 0, .75);
+	border-radius: .5em;
+}
+
+.equip-explain {
+	display: inline-block;
+	margin: 0 7%;
+}
+
+.equip-explain img {
+	width: 200px;
+}
+
+.info-window {
+	background-color: rgba(0, 0, 0, 0.97);
+    color: #fff;
+    margin: auto;
+    border-radius: 50px;
+    position: fixed;
+    padding: 20px;
+    width: 75%;
+    z-index: 100;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-window p {
+	margin-left: 75px;
+}
+
+.close-button-holder {
+	width: 100%;
+	text-align: right;
+}
+
+.close-button {
+	cursor: pointer;
+}
+
+form {
+	padding: .5em;
+}
+
+.label-and-input {
+	display: block;
+	margin: 1em;
+}
+
+input, textarea, button {
+	background-color: #a6a6a6;
+	color: #19191A;
+	padding: .5em;
+	border-radius: .5em;
+	border: none;
+	font-size: 1em;
+	font-family: Georgia, serif;
+}
+
+input:hover, textarea:hover {
+	background-color: #d9d9d9;
+}
+
+input:focus, textarea:focus {
+	background-color: #fff;
+}
+
+textarea {
+	width: 80%;
+	vertical-align: top;
+	height: 10em;
+}
+
+button {
+	font-size: 1.25em;
+	background-color: #fff;
+}
+
+button:hover {
+	background-color: #333;
+	color: #fff;
+}
+
+button:active {
+	background-color: #0d0d0d;
+	color: #fff;
+}
+
+form button {
+	float: right;
+	margin-right: 6em;
+	margin-bottom: .5em;
+	padding: .5em;
+}
+
+label.error {
+	display: block;
+	font-weight: bold;
+	text-indent: 1.5em;
+	margin-top: .5em;
+	text-decoration: red double underline overline;
+}
+
+.prev-quote {
+	float: left;
+}
+
+.next-quote {
+	float: right;
+}
+
+.back-to-portfolio {
+	max-width: 30em;
+	background-color: #fff;
+	color: #000;
+	position: fixed;
+	padding: 10px;
+	bottom: 0;
+	right: 0;
+	z-index: 200;
+}
+
+.back-to-portfolio a, .back-to-portfolio a:visited {
+	color: #000;
+	text-decoration: underline;
+}
+
+.back-to-portfolio a:hover {
+	color: #f00;
+}
+
+@font-face {
+	font-family: "Mostly Ghostly";
+	src: url("../fonts/Mostly Ghostly.ttf");
+}
+
+@font-face {
+	font-family: "Poetsen One";
+	src: url("../fonts/PoetsenOne-Regular.ttf");
+}
+
+@media only screen and (min-width: 768px) {
+	blockquote {
+		width: 80%;
+	}
+	
+	form {
+		width: 60%;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.slideshow {
+		height: 40vh;
+	}
+	
+	#testimonials blockquote {
+		margin-top: 2em;
+	} 
+}
