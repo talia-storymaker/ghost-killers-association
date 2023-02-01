@@ -1,3 +1,0 @@
-It is highly advised that you use the online version of this site, since not all functionality will work locally.
-
-http://tdegisi.nfshost.com/jquery_tdegisi_wk14/

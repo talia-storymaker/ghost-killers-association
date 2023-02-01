@@ -58,10 +58,6 @@ function displayEquipInfo(link) {
 		.appendTo('body')
 		.append('<div class="ajax-in"></div>');
 		
-	/*$('.info-window').css('opacity', '0')
-		.appendTo('body')
-		.animate({'opacity': '1'}, 'fast');*/
-		
 	$('<div class="close-button-holder"></div>')
 		.prependTo($('.info-window'));
 		

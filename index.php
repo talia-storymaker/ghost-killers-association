@@ -18,7 +18,7 @@
 </head>
 
 <body>
-	<div class="back-to-portfolio"><a href="https://tdegisi.nfshost.com/">By Talia DeGisi</a></div>
+	<div class="back-to-portfolio"><a href="https://www.taliadegisi.com/">By Talia Hatfield</a></div>
 	<header>
 		<h1>Ghost Killers Association</h1>
 	</header>
